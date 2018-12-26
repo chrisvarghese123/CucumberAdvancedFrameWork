@@ -1,2 +1,6 @@
-20:04:16.656 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Chrome Browser Instantiated
-20:04:18.617 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Dude i have maximised the window
+21:17:26.641 [main] INFO  - Chrome Browser Instantiated
+21:17:28.018 [main] INFO  - Dude i have maximised the window
+21:17:35.169 [main] INFO  - Opened http://www.qaclickacademy.com/ 
+21:17:44.026 [main] INFO  - Entering Credentials
+21:17:53.253 [main] INFO  - Entered Credentials and clicking login button
+21:17:53.255 [main] INFO  - Running @AfterTest - teardown method

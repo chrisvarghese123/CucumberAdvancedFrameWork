@@ -20,6 +20,7 @@ public class basebrowser extends drivercontext{
 
 
     public static Logger logger = LogManager.getLogger(EndtoEndAutomation.DriversSUp.Base.basebrowser.class);
+    //commenting above line causes the logging not to be recorded?
 
     //    public static WebDriver Driver;
 public static Properties pro = new Properties();
@@ -38,7 +39,7 @@ if (browserName.equalsIgnoreCase("Chrome") )
     Driver = new ChromeDriver();
     logger.info("Chrome Browser Instantiated");
     Driver.manage().window().maximize();
-logger.info("Dude i have maximised the window");
+logger.info("Maximised the window");
 }
 else if(browserName.equalsIgnoreCase("firefox"))
 {

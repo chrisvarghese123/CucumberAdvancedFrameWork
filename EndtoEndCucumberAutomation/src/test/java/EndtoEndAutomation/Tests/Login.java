@@ -36,7 +36,7 @@ public class Login extends basebrowser {
         //Driver.findElement(By.cssSelector("div.tools:nth-child(2) div.container-fluid nav.pull-right ul:nth-child(1) li:nth-child(4) a:nth-child(1) > span:nth-child(2)")).click();
         drivercontext.Driver.get(url);
         homepage home = new homepage();
-
+logger.info("Opened http://www.qaclickacademy.com/ ");
 
         Assert.assertTrue(home.LoginLogo.isDisplayed()); //verify display of logo
 
@@ -51,6 +51,7 @@ public class Login extends basebrowser {
 
     @Test (groups = {"Primary"})
     public void EnterCredentials() {
+        logger.info("Entering Credentials");
 
         landingpage Landingpage = new landingpage();
 
@@ -78,16 +79,21 @@ String Usernamefieldtxt = Landingpage.Usernamefieldtxt.getText();
         Assert.assertTrue(Landingpage.Loginbutton.isDisplayed());
         Landingpage.Loginbutton.click();
 
+        logger.info("Entered Credentials and clicking login button");
     }
 
 @Test (groups = {"primary"})
     public void Mainpagecheck(){
     MainPage mainPage = new MainPage();
         Assert.assertTrue(mainPage.Logo.isDisplayed());
-}
+    logger.info("Running mainpage verifications after logging in");
+
+    }
 
     @AfterTest
     public void teardown() {
+
+        logger.info("Running @AfterTest - teardown method");
 
      //   drivercontext.Driver.quit();
     }
