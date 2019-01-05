@@ -1,6 +1,7 @@
-21:17:26.641 [main] INFO  - Chrome Browser Instantiated
-21:17:28.018 [main] INFO  - Dude i have maximised the window
-21:17:35.169 [main] INFO  - Opened http://www.qaclickacademy.com/ 
-21:17:44.026 [main] INFO  - Entering Credentials
-21:17:53.253 [main] INFO  - Entered Credentials and clicking login button
-21:17:53.255 [main] INFO  - Running @AfterTest - teardown method
+14:56:17.244 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Chrome Browser Instantiated
+14:56:18.674 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Maximised the window
+14:56:25.984 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Opened http://www.qaclickacademy.com/ 
+14:56:43.903 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Entering Credentials
+14:56:49.368 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Entered Credentials and clicking login button
+14:56:49.443 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Running mainpage verifications after logging in
+14:56:49.447 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Running @AfterTest - teardown method

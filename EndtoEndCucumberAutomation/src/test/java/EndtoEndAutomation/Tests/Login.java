@@ -14,6 +14,8 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
+import static EndtoEndAutomation.Tests.Utilities.TakeScreenshot.getScreenShots;
+
 public class Login extends basebrowser {
 
 
@@ -45,7 +47,11 @@ logger.info("Opened http://www.qaclickacademy.com/ ");
         Assert.assertTrue(Moto.contains("TEST"));
 
         Assert.assertTrue(home.loginbutton.isDisplayed());
+        getScreenShots("pass");// test screenshot
         home.loginbutton.click();
+
+//        Assert.assertTrue(home.loginbutton.isDisplayed()); //fail test to see the screenshot on error from listener!!!
+
 
     }
 

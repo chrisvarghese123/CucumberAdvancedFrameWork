@@ -12,6 +12,7 @@
                 <methods>
                     <include name="LogintotheApplication"/>
                     <include name="EnterCredentials"/>
+                    <include name="Mainpagecheck"/>
                 </methods>
             </class>
         </classes>

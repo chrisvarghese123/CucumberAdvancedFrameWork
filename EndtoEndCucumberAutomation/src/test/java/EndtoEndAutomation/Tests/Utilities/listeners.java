@@ -6,7 +6,11 @@ import org.testng.ITestResult;
 
 import java.io.IOException;
 
-import static EndtoEndAutomation.DriversSUp.Base.basebrowser.getScreenShots;
+import static EndtoEndAutomation.Tests.Utilities.TakeScreenshot.getScreenShots;
+
+//import static EndtoEndAutomation.DriversSUp.Base.basebrowser.getScreenShots;
+
+//import static EndtoEndAutomation\Tests\Utilities\TakeScreenshot.getScreenShots;
 
 public class listeners implements ITestListener {
 
