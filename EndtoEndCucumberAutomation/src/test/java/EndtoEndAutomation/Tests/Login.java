@@ -5,6 +5,10 @@ import EndtoEndAutomation.DriversSUp.Base.drivercontext;
 import EndtoEndAutomation.DriversSUp.Pages.MainPage;
 import EndtoEndAutomation.DriversSUp.Pages.homepage;
 import EndtoEndAutomation.DriversSUp.Pages.landingpage;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.google.common.base.Verify;
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -27,6 +31,17 @@ public class Login extends basebrowser {
     @Test(groups = {"Primary"})
     public void LogintotheApplication() throws IOException {
 
+
+        ExtentHtmlReporter reporter = new ExtentHtmlReporter("./Reports/autoReport.html");
+
+  ExtentReports extent = new ExtentReports();
+  extent.attachReporter(reporter);
+        ExtentTest ExtentLogger = extent.createTest("Login test");
+
+        ExtentLogger.log(Status.INFO, "Login to QA click academy");
+        ExtentLogger.log(Status.PASS, "Logged in to QA click academy");
+
+        extent.flush();
 //        initializeBrowser();
 //        Driver.get("http://www.qaclickacademy.com/");
 //basebrowser.initializeBrowser().get("http://www.qaclickacademy.com/");
@@ -48,6 +63,13 @@ logger.info("Opened http://www.qaclickacademy.com/ ");
 
         Assert.assertTrue(home.loginbutton.isDisplayed());
         getScreenShots("pass");// test screenshot
+if (home.Popup.isDisplayed()) {
+    System.out.println("The popup is displayed");
+    getScreenShots("popup");
+    home.PopupCross.click();
+    getScreenShots("popupclosed");
+}
+
         home.loginbutton.click();
 
 //        Assert.assertTrue(home.loginbutton.isDisplayed()); //fail test to see the screenshot on error from listener!!!

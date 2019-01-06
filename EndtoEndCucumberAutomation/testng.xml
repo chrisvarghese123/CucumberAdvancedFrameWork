@@ -15,6 +15,11 @@
                     <include name="Mainpagecheck"/>
                 </methods>
             </class>
+            <class name="EndtoEndAutomation.Tests.ShopNavigation">
+                <methods>
+                    <include name="ShopNav"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

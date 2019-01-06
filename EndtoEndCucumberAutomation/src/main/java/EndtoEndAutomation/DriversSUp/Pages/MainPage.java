@@ -13,8 +13,15 @@ public class MainPage extends basepage {
     @FindBy(how = How.CSS, using = "#navbar > div > div > a > img")
     public WebElement Logo;
 
+
+    @FindBy(how = How.CSS, using = "#navbar > div > div > button")
+    public WebElement OptionButton;
+
     public WebElement getLogo() {
         return Logo;
     }
+
+    public WebElement getOptionButton() { return OptionButton; }
+
 
 }
