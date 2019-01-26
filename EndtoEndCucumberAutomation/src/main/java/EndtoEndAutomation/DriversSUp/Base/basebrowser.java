@@ -19,7 +19,8 @@ import java.util.concurrent.TimeUnit;
 public class basebrowser extends drivercontext{
 
 
-    public static Logger logger = LogManager.getLogger(EndtoEndAutomation.DriversSUp.Base.basebrowser.class);
+       public static Logger logger = LogManager.getLogger(EndtoEndAutomation.DriversSUp.Base.basebrowser.class);
+
     //commenting above line causes the logging not to be recorded?
 
     //    public static WebDriver Driver;

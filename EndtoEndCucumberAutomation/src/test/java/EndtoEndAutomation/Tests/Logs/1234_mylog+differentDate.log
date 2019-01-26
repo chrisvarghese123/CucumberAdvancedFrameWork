@@ -1,9 +1,9 @@
-09:41:50.765 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Chrome Browser Instantiated
-09:41:51.892 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Maximised the window
-09:41:56.311 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Opened http://www.qaclickacademy.com/ 
-09:42:05.930 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Entering Credentials
-09:42:09.250 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Entered Credentials and clicking login button
-09:42:09.298 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Running mainpage verifications after logging in
-09:42:09.561 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - halved the window width
-09:42:09.598 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - OptionButton verification post login
-09:42:09.600 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Running @AfterTest - teardown method
+18:39:44.874 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Chrome Browser Instantiated
+18:39:46.238 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Maximised the window
+18:39:51.222 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Opened http://www.qaclickacademy.com/ 
+18:40:12.024 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Entering Credentials
+18:40:16.598 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Entered Credentials and clicking login button
+18:40:16.657 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Running mainpage verifications after logging in
+18:40:16.842 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - halved the window width to verify option button
+18:40:16.895 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - OptionButton verification post login
+18:40:16.898 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Running @AfterTest - teardown method

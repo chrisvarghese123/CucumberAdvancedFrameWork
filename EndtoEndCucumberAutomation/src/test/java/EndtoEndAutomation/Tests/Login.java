@@ -32,7 +32,7 @@ public class Login extends basebrowser {
     public void LogintotheApplication() throws IOException {
 
 
-        ExtentHtmlReporter reporter = new ExtentHtmlReporter("./Reports/autoReport.html");
+    ExtentHtmlReporter reporter = new ExtentHtmlReporter("./Reports/autoReport.html");
 
   ExtentReports extent = new ExtentReports();
   extent.attachReporter(reporter);
@@ -63,7 +63,15 @@ logger.info("Opened http://www.qaclickacademy.com/ ");
 
         Assert.assertTrue(home.loginbutton.isDisplayed());
         getScreenShots("pass");// test screenshot
-if (home.Popup.isDisplayed()) {
+//        ExtentTest ExtentLogger = extent.createTest("Login button loaded test");
+
+        ExtentLogger.log(Status.INFO, "Login button loaded to QA click academy");
+        ExtentLogger.log(Status.PASS, "Log in button loaded to QA click academy");
+
+        extent.flush();
+
+
+        if (home.Popup.isDisplayed()) {
     System.out.println("The popup is displayed");
     getScreenShots("popup");
     home.PopupCross.click();
@@ -108,6 +116,16 @@ String Usernamefieldtxt = Landingpage.Usernamefieldtxt.getText();
         Landingpage.Loginbutton.click();
 
         logger.info("Entered Credentials and clicking login button");
+
+//        ExtentTest ExtentLogger = extent.createTest("Login button loaded test");
+//
+//        ExtentLogger.log(Status.INFO, "Login button loaded to QA click academy");
+//        ExtentLogger.log(Status.PASS, "Log in button loaded to QA click academy");
+//
+//        extent.flush();
+
+
+
     }
 
 @Test (groups = {"primary"})
