@@ -30,6 +30,8 @@ public static Properties pro = new Properties();
 public static WebDriver initializeBrowser() throws IOException {
 
     FileInputStream fis = new FileInputStream("src\\test\\java\\EndtoEndAutomation\\Tests\\Utilities\\Property.properties");
+                                                      //src\test\java\EndtoEndAutomation\Tests\Utilities\Property.properties
+
     pro.load(fis);
 String browserName =    pro.getProperty("browser");
 System.out.println("the browser is:" +    browserName);

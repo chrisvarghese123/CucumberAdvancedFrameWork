@@ -1,5 +1,6 @@
 package EndtoEndAutomation.Tests;
 
+import EndtoEndAutomation.DriversSUp.Base.ExtentReporterNG;
 import EndtoEndAutomation.DriversSUp.Base.basebrowser;
 import EndtoEndAutomation.DriversSUp.Base.drivercontext;
 import EndtoEndAutomation.DriversSUp.Pages.MainPage;
@@ -18,6 +19,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
+import static EndtoEndAutomation.DriversSUp.Base.ExtentReporterNG.reporter;
 import static EndtoEndAutomation.Tests.Utilities.TakeScreenshot.getScreenShots;
 
 public class Login extends basebrowser {
@@ -31,10 +33,10 @@ public class Login extends basebrowser {
     @Test(groups = {"Primary"})
     public void LogintotheApplication() throws IOException {
 
-
-    ExtentHtmlReporter reporter = new ExtentHtmlReporter("./Reports/autoReport.html");
-
-  ExtentReports extent = new ExtentReports();
+//
+//    ExtentHtmlReporter reporter = new ExtentHtmlReporter("./Reports/autoReport.html");
+//
+  ExtentReports extent = ExtentReporterNG.extent;
   extent.attachReporter(reporter);
         ExtentTest ExtentLogger = extent.createTest("Login test");
 
@@ -124,6 +126,14 @@ String Usernamefieldtxt = Landingpage.Usernamefieldtxt.getText();
 //
 //        extent.flush();
 
+        ExtentReports extent = ExtentReporterNG.extent;
+        extent.attachReporter(reporter);
+        ExtentTest ExtentLogger = extent.createTest("Login test 2");
+
+        ExtentLogger.log(Status.INFO, "qLogin to QA click academy");
+        ExtentLogger.log(Status.PASS, "qLogged in to QA click academy");
+
+        extent.flush();
 
 
     }
