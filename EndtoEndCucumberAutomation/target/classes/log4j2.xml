@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="logPath">src/test/java/EndtoEndAutomation/Tests/Logs</Property>
+    </Properties>
+
+    <Appenders>
+        <RollingFile name="fileLogger" filename = "${logPath}/1234_Mylog.log" filePattern="${logPath}/1234_mylog+differentDate.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+
+            <Policies>
+                <OnStartupTriggeringPolicy></OnStartupTriggeringPolicy>
+            </Policies>
+
+        </RollingFile>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="EndtoEndAutomation.DriversSUp.Base.basebrowser" level="info">
+            <AppenderRef ref="Console"/>
+        </Logger>
+        <Root level="info">
+            <!--<AppenderRef ref="Console"/>-->
+            <AppenderRef ref="fileLogger"/>
+        </Root>
+    </Loggers>
+</Configuration>

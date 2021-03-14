@@ -1,0 +1,7 @@
+00:20:24.580 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Chrome Browser Instantiated
+00:20:25.716 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Maximised the window
+00:20:29.154 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Opened http://www.qaclickacademy.com/ 
+00:20:39.547 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Entering Credentials
+00:20:42.961 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Entered Credentials and clicking login button
+00:20:43.003 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Running mainpage verifications after logging in
+00:20:43.005 [main] INFO  EndtoEndAutomation.DriversSUp.Base.basebrowser - Running @AfterTest - teardown method

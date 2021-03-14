@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG group suite">
+    
+    <listeners>
+        <listener class-name="EndtoEndAutomation.Tests.Utilities.listeners"/>
+        
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/AjmelYounes/IdeaProjects/EndtoEndCucumberAutomation">
+        <!--<classes>-->
+            <!--<class name="EndtoEndAutomation.Tests.Login">-->
+                <!--<methods>-->
+                    <!--<include name="LogintotheApplication"/>-->
+                    <!--<include name="EnterCredentials"/>-->
+                    <!--<include name="Mainpagecheck"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+        <!--</classes>-->
+        <!---->
+
+        <groups>
+            <run>
+                <include name="Primary"/>
+                <!--<include name="Secondary"/>-->
+
+            </run>
+        </groups>
+
+
+        <classes>
+            <class name="EndtoEndAutomation.Tests.Login"/>
+            <!--<class name="EndtoEndAutomation.Tests.ShopNavigation"/>-->
+
+        </classes>
+
+
+
+
+
+    </test>
+</suite>
